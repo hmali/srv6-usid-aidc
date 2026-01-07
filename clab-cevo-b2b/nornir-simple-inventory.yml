@@ -1,0 +1,21 @@
+---
+l1:
+    username: admin
+    password: admin@123
+    platform: juniper_cjunosevolved
+    hostname: 172.20.20.3
+l2:
+    username: admin
+    password: admin@123
+    platform: juniper_cjunosevolved
+    hostname: 172.20.20.5
+s1:
+    username: admin
+    password: admin@123
+    platform: juniper_cjunosevolved
+    hostname: 172.20.20.4
+s2:
+    username: admin
+    password: admin@123
+    platform: juniper_cjunosevolved
+    hostname: 172.20.20.2

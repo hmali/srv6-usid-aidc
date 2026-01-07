@@ -1,0 +1,211 @@
+{
+  "name": "cevo-b2b",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-94a7911d1816",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": [],
+  "nodes": {
+    "l1": {
+      "index": "0",
+      "shortname": "l1",
+      "longname": "clab-cevo-b2b-l1",
+      "fqdn": "l1.cevo-b2b.io",
+      "group": "",
+      "labdir": "/home/hmali/clab/srv6-usid-aidc/clab-cevo-b2b/l1",
+      "kind": "juniper_cjunosevolved",
+      "image": "cjunosevolved:25.2R1.8-EVO",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-94a7911d1816",
+        "clab-node-group": "",
+        "clab-node-kind": "juniper_cjunosevolved",
+        "clab-node-lab-dir": "/home/hmali/clab/srv6-usid-aidc/clab-cevo-b2b/l1",
+        "clab-node-longname": "clab-cevo-b2b-l1",
+        "clab-node-name": "l1",
+        "clab-node-type": "",
+        "clab-owner": "hmali",
+        "clab-topo-file": "/home/hmali/clab/srv6-usid-aidc/usid-sl-cevo.yml",
+        "containerlab": "cevo-b2b"
+      },
+      "port-bindings": [
+      ]
+    },
+    "l2": {
+      "index": "1",
+      "shortname": "l2",
+      "longname": "clab-cevo-b2b-l2",
+      "fqdn": "l2.cevo-b2b.io",
+      "group": "",
+      "labdir": "/home/hmali/clab/srv6-usid-aidc/clab-cevo-b2b/l2",
+      "kind": "juniper_cjunosevolved",
+      "image": "cjunosevolved:25.2R1.8-EVO",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::5",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-94a7911d1816",
+        "clab-node-group": "",
+        "clab-node-kind": "juniper_cjunosevolved",
+        "clab-node-lab-dir": "/home/hmali/clab/srv6-usid-aidc/clab-cevo-b2b/l2",
+        "clab-node-longname": "clab-cevo-b2b-l2",
+        "clab-node-name": "l2",
+        "clab-node-type": "",
+        "clab-owner": "hmali",
+        "clab-topo-file": "/home/hmali/clab/srv6-usid-aidc/usid-sl-cevo.yml",
+        "containerlab": "cevo-b2b"
+      },
+      "port-bindings": [
+      ]
+    },
+    "s1": {
+      "index": "2",
+      "shortname": "s1",
+      "longname": "clab-cevo-b2b-s1",
+      "fqdn": "s1.cevo-b2b.io",
+      "group": "",
+      "labdir": "/home/hmali/clab/srv6-usid-aidc/clab-cevo-b2b/s1",
+      "kind": "juniper_cjunosevolved",
+      "image": "cjunosevolved:25.2R1.8-EVO",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-94a7911d1816",
+        "clab-node-group": "",
+        "clab-node-kind": "juniper_cjunosevolved",
+        "clab-node-lab-dir": "/home/hmali/clab/srv6-usid-aidc/clab-cevo-b2b/s1",
+        "clab-node-longname": "clab-cevo-b2b-s1",
+        "clab-node-name": "s1",
+        "clab-node-type": "",
+        "clab-owner": "hmali",
+        "clab-topo-file": "/home/hmali/clab/srv6-usid-aidc/usid-sl-cevo.yml",
+        "containerlab": "cevo-b2b"
+      },
+      "port-bindings": [
+      ]
+    },
+    "s2": {
+      "index": "3",
+      "shortname": "s2",
+      "longname": "clab-cevo-b2b-s2",
+      "fqdn": "s2.cevo-b2b.io",
+      "group": "",
+      "labdir": "/home/hmali/clab/srv6-usid-aidc/clab-cevo-b2b/s2",
+      "kind": "juniper_cjunosevolved",
+      "image": "cjunosevolved:25.2R1.8-EVO",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-94a7911d1816",
+        "clab-node-group": "",
+        "clab-node-kind": "juniper_cjunosevolved",
+        "clab-node-lab-dir": "/home/hmali/clab/srv6-usid-aidc/clab-cevo-b2b/s2",
+        "clab-node-longname": "clab-cevo-b2b-s2",
+        "clab-node-name": "s2",
+        "clab-node-type": "",
+        "clab-owner": "hmali",
+        "clab-topo-file": "/home/hmali/clab/srv6-usid-aidc/usid-sl-cevo.yml",
+        "containerlab": "cevo-b2b"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "endpoints": {
+        "a": {
+          "node": "s1",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:ec:8a:c1",
+          "peer": "z"
+        },
+        "z": {
+          "node": "l1",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:31:c3:d2",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "s1",
+          "interface": "eth5",
+          "mac": "aa:c1:ab:7f:ca:c2",
+          "peer": "z"
+        },
+        "z": {
+          "node": "l2",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:91:b6:17",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "s2",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:00:7a:fa",
+          "peer": "z"
+        },
+        "z": {
+          "node": "l1",
+          "interface": "eth5",
+          "mac": "aa:c1:ab:81:c6:10",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "s2",
+          "interface": "eth5",
+          "mac": "aa:c1:ab:cc:5a:f3",
+          "peer": "z"
+        },
+        "z": {
+          "node": "l2",
+          "interface": "eth5",
+          "mac": "aa:c1:ab:02:7d:4a",
+          "peer": "a"
+        }
+      }
+    }
+  ]
+}
