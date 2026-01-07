@@ -1,0 +1,6 @@
+show srv6 block    
+show isis overview 
+show isis overview | find SPRING
+show isis database <node id> extensive
+ping srv6 isis
+      

@@ -1,0 +1,35 @@
+name: cevo-b2b
+
+topology:
+  nodes:
+    s1:
+      kind: juniper_cjunosevolved
+      image: cjunosevolved:25.2R1.8-EVO   # use whatever tag you loaded via `docker load`
+      startup-config:s1.conf
+      env:
+        CPTX_COSIM: "BX"                  # BX=PTX10002-36QDD, BT=PTX10001-36MR
+    s2:
+      kind: juniper_cjunosevolved
+      image: cjunosevolved:25.2R1.8-EVO
+      env:
+        CPTX_COSIM: "BX"
+    l1:
+      kind: juniper_cjunosevolved
+      image: cjunosevolved:25.2R1.8-EVO   # use whatever tag you loaded via `docker load`
+      env:
+        CPTX_COSIM: "BX"                  # BX=PTX10002-36QDD, BT=PTX10001-36MR
+    l2:
+      kind: juniper_cjunosevolved
+      image: cjunosevolved:25.2R1.8-EVO
+      env:
+        CPTX_COSIM: "BX"
+
+
+
+
+
+  links:
+    - endpoints: ["s1:eth4", "l1:eth4"]   # eth0=mgmt, eth1-eth3 reserved, eth4+=WAN/data
+    - endpoints: ["s1:eth5", "l2:eth4"] 
+    - endpoints: ["s2:eth4", "l1:eth5"]
+    - endpoints: ["s2:eth5", "l2:eth5"]
